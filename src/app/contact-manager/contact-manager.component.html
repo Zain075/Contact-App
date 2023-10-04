@@ -1,0 +1,123 @@
+<div class="container">
+  Login Date : {{loginDate|date:'medium'}}
+    <div class="row">
+      
+        <div class="col text-center">
+            <h1 class="my-3"><b>CONTACT MANAGMENT APPLICATION</b></h1>
+            <p>Everything you need to provide seamless customer service
+                Be where your customers are
+                Engage in context-rich conversations on email, chat, phone, web, and social media right from a single platform from wherever you are - all you need is a laptop or a cellphone.
+                Automate your workflows
+                Let Freshdesk's automations take care of your support operations so you can spend more time delivering memorable customer service.
+                Offer self-service
+                Build a knowledge base and set up bots and help widgets to help your customers and agents find answers instantly.
+                Gather important insights
+                Track team performance, measure customer satisfaction, and identify bottlenecks using customizable dashboards and reports.</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col d-flex justify-content-between">
+            <div>
+            <!-- search -->
+            <input (keyup)="search($event)" type="text" placeholder="Search Contact" class="form-control">
+            </div>
+            <!-- search button -->
+            <button class="btn btn-outline-primary" routerLink="addContact">Add Contact</button>
+        </div>
+    </div>
+    <!-- String interpolation -->
+    {{ heading}}
+    <!-- {{allContacts|json}} -->
+    <div class="row my-5">
+        <div class="col-6" *ngFor="let contact of allContacts |filter:searchKey:'name'">
+            <div class="card">
+                <div class="row">
+                    <div class="col-6">
+                        <!-- image -->
+                        <img [src]="contact.photourl" alt="users logo" height="200px" width="175px">
+                    </div>
+                    <div class="col-6">
+                        <!-- content -->
+                        <ol class="list-group list-group-numbered">
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                              <div class="ms-2 me-auto">
+                                <div class="fw-bold">Full Name</div>
+                               {{contact.name}}
+                              </div>
+                              <!-- view -->
+                              <span class="badge bg-light rounded-pill p-3">
+                            <a routerLink="/ContactManager/view/{{contact.id}}">    
+                                <i class="fa-solid fa-eye"></i>
+                              </a>
+                            </span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                              <div class="ms-2 me-auto">
+                                <div class="fw-bold">Phone Number</div>
+                                {{contact.phone}}
+                              </div>
+                              <!-- edit -->
+                              <span class="badge bg-light rounded-pill p-3">
+                               <a routerLink="/ContactManager/edit/{{contact.id}}">
+                                <i class="fa-solid fa-pen"></i>
+                                </a>
+                            </span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                              <div class="ms-2 me-auto">
+                                <div class="fw-bold">Email</div>
+                                {{contact.Email}}
+                              </div>
+                              <!-- delete -->
+                              <span (click)="deleteContact(contact.id)" class="badge bg-light rounded-pill p-3">
+                                <a routerLink="">
+                                    <i class="fa-solid fa-trash"></i>
+                                </a>
+                              </span>
+                            </li>
+                          </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <div class="row">
+        <div class="card col-6 m-4">
+        <div class="col-3">
+            image
+            <img src="https://i.pinimg.com/474x/76/4d/59/764d59d32f61f0f91dec8c442ab052c5.jpg" alt="users logo" height="350px" width="350px"> -->
+        <!-- </div> -->
+        <!-- <div class="col- my-5"> -->
+            <!-- content -->
+            <!-- <ul class="list-group"> -->
+                <!-- <li class="list-group-item">An item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+                <li class="list-group-item">A fourth item</li>
+                <li class="list-group-item">And a fifth one</li>
+              </ul> -->
+
+        <!-- </div>
+        </div>
+    </div> --> 
+
+</div>

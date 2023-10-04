@@ -1,0 +1,58 @@
+{
+  "contacts": [
+    {
+      "id": 1,
+      "name": "Ann Luke",
+      "Email": "annluke123@gmail.com",
+      "phone": "9562314785",
+      "photourl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80",
+      "company": "ABC Company",
+      "title": "HR",
+      "GroupId": "1"
+    },
+    {
+      "id": 2,
+      "name": "Jennifer",
+      "Email": "jenny765@gmail.com",
+      "phone": "9541254785",
+      "photourl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSpjng8O-LPwOIu_55OuaYHdF8YFxcIdJLs4v2kaft6wMRujRE6Zhmg1C3gr_IP_pYcBU&usqp=CAU",
+      "company": "DEF Company",
+      "title": "CEO",
+      "GroupId": "2"
+    },
+    {
+      "id": 3,
+      "name": "George Lopez R",
+      "Email": "georgelopez098@gmail.com",
+      "phone": "9541251234",
+      "photourl": "https://img.freepik.com/premium-photo/portrait-smiling-young-man-looking-camera_33839-1731.jpg",
+      "company": "XYZ Company",
+      "title": "Manager",
+      "GroupId": "3"
+    },
+    {
+      "id": 4,
+      "name": "Arjun ",
+      "Email": "Arjun3456@gmail.com",
+      "phone": "6282836473",
+      "photourl": "https://media.istockphoto.com/id/1138008134/photo/indian-man-headshot.jpg?s=170667a&w=0&k=20&c=K5Ig6YlEjKmrcjX96m4yg_f1i-2sS5X_LjiH44ycqdY=",
+      "company": "HIJ Company",
+      "title": "Accountant",
+      "GroupId": "4"
+    }
+  ],
+  "groups": [
+    {
+      "id": "1",
+      "name": "Company"
+    },
+    {
+      "id": "2",
+      "name": "Family"
+    },
+    {
+      "id": "3",
+      "name": "Friends"
+    }
+  ]
+}
